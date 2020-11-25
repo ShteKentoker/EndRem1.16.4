@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "endrem:block/old_frame" },
+    "facing=south": { "model": "endrem:block/old_frame", "y":  180},
+    "facing=west": { "model": "endrem:block/old_frame", "y":  270},
+    "facing=east": { "model": "endrem:block/old_frame", "y":  90}
+  }
+}

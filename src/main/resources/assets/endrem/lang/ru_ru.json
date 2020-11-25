@@ -1,0 +1,23 @@
+{
+  "item.endrem.old_pearl": "Старинный Глаз",
+  "item.endrem.rogue_pearl": "Глаз Изгоя",
+  "item.endrem.nether_pearl": "Глаз Ада",
+  "item.endrem.cold_pearl": "Ледяной Глаз",
+  "item.endrem.magical_pearl": "Волшебный Глаз",
+  "item.endrem.black_pearl": "Чёрный Глаз",
+  "item.endrem.lost_pearl": "Потерянный Глаз",
+  "item.endrem.corrupted_pearl": "Испорченный Глаз",
+  "item.endrem.core": "Ядро",
+  "item.endrem.powered_core": "Заряженное Ядро",
+  "item.endrem.eye_pearl": "Око Края",
+  "block.endrem.end_creator": "Создатель Края",
+  "block.endrem.old_frame": "Старинная Рамка",
+  "block.endrem.rogue_frame": "Рамка Изгоя",
+  "block.endrem.nether_frame": "Рамка Ада",
+  "block.endrem.cold_frame": "Ледяная Рамка",
+  "block.endrem.corrupted_frame": "Испорченная Рамка",
+  "block.endrem.magical_frame": "Волшебная Рамка",
+  "block.endrem.black_frame": "Чёрная Рамка",
+  "block.endrem.lost_frame": "Потерянная Рамка",
+  "itemGroup.endremTab": "НовыйКрай"
+}

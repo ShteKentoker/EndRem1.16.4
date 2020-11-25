@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "endrem:block/ore_pearl_block" }
+  }
+}

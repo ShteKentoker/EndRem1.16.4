@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "endrem:block/nether_frame" },
+    "facing=south": { "model": "endrem:block/nether_frame", "y":  180},
+    "facing=west": { "model": "endrem:block/nether_frame", "y":  270},
+    "facing=east": { "model": "endrem:block/nether_frame", "y":  90}
+  }
+}
