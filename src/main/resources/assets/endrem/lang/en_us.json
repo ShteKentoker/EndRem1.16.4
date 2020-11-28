@@ -10,7 +10,7 @@
   "item.endrem.guardian_pearl": "Guardian Eye",
   "item.endrem.end_crystal_pearl": "End Crystal Eye",
   "item.endrem.corrupted_pearl": "Corrupted Eye",
-  "item.endrem.end_crystal": "End Crystal",
+  "item.endrem.end_crystal_fragment": "End Crystal Fragment",
   "item.endrem.core": "Core",
   "item.endrem.powered_core": "Powered Core",
   "block.endrem.end_creator": "End Creator",
@@ -27,6 +27,6 @@
   "block.endrem.guardian_frame": "Guardian Frame",
   "block.endrem.end_crystal_frame": "End Crystal Frame",
   "block.endrem.empty_frame": "Empty Frame",
-  "block.endrem.end_crystal_block": "End Crystal",
+  "block.endrem.end_crystal_ore": "End Crystal Ore",
   "itemGroup.endremTab": "End Remastered"
 }

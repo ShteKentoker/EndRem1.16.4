@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "endrem:end_crystal"
+          "name": "endrem:end_crystal_fragment"
         }
       ]
     }

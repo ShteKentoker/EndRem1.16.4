@@ -104,6 +104,7 @@ public class EndRemastered {
     private void setup(final FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
             STStructures.setupStructures();
+            STStructures.registerAllPieces();
             STConfiguredStructures.registerConfiguredStructures();
             STStructures.init();
         });

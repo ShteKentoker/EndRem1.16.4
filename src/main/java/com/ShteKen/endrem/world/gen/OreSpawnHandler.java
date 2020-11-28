@@ -25,7 +25,7 @@ public class OreSpawnHandler {
 
     public static void registerOres(){
         netherOres.add(register("end_crystal_block", Feature.ORE.withConfiguration(new OreFeatureConfig(
-                OreFeatureConfig.FillerBlockType.NETHERRACK, RegistryHandler.END_CRYSTAL_BLOCK.get().getDefaultState(), 3))
+                OreFeatureConfig.FillerBlockType.NETHERRACK, RegistryHandler.END_CRYSTAL_ORE.get().getDefaultState(), 3))
                 .range(20).square() // spawn height
                 .func_242731_b(20))); // spawn frequency per chunks
 

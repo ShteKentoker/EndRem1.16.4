@@ -54,7 +54,7 @@ public class RegistryHandler {
     public static final RegistryObject<Item> WITHER_PEARL = ITEMS.register("wither_pearl", ItemBase::new);
     public static final RegistryObject<Item> END_CRYSTAL_PEARL = ITEMS.register("end_crystal_pearl", ItemBase::new);
     public static final RegistryObject<Item> GUARDIAN_PEARL = ITEMS.register("guardian_pearl", ItemBase::new);
-    public static final RegistryObject<Item> END_CRYSTAL = ITEMS.register("end_crystal", ItemBase::new);
+    public static final RegistryObject<Item> END_CRYSTAL_FRAGMENT = ITEMS.register("end_crystal_fragment", ItemBase::new);
 
     public static final RegistryObject<Item> CORE = ITEMS.register("core", ItemBase::new);
     public static final RegistryObject<Item> POWERED_CORE = ITEMS.register("powered_core", ItemBase::new);
@@ -78,7 +78,7 @@ public class RegistryHandler {
     public static final RegistryObject<Block> GUARDIAN_FRAME = BLOCKS.register("guardian_frame", FrameClass::new);
     public static final RegistryObject<Block> EMPTY_FRAME = BLOCKS.register("empty_frame", EmptyFrame::new);
 
-    public static final RegistryObject<Block> END_CRYSTAL_BLOCK = BLOCKS.register("end_crystal_block", () -> new OreBlockBase(Block.Properties.from(Blocks.ANCIENT_DEBRIS)));
+    public static final RegistryObject<Block> END_CRYSTAL_ORE = BLOCKS.register("end_crystal_ore", () -> new OreBlockBase(Block.Properties.from(Blocks.ANCIENT_DEBRIS)));
 
     //Block Item
 
@@ -98,7 +98,7 @@ public class RegistryHandler {
     public static final RegistryObject<Item> END_CRYSTAL_FRAME_ITEM = ITEMS.register("end_crystal_frame", () -> new BlockItem(END_CRYSTAL_FRAME.get(), new Item.Properties().group(EndRemastered.TAB)));
     public static final RegistryObject<Item> GUARDIAN_FRAME_ITEM = ITEMS.register("guardian_frame", () -> new BlockItem(GUARDIAN_FRAME.get(), new Item.Properties().group(EndRemastered.TAB)));
 
-    public static final RegistryObject<Item> END_CRYSTAL_BLOCK_ITEM = ITEMS.register("end_crystal_block", () -> new BlockItem(END_CRYSTAL_BLOCK.get(), new Item.Properties().group(EndRemastered.TAB)));
+    public static final RegistryObject<Item> END_CRYSTAL_ORE_ITEM = ITEMS.register("end_crystal_ore", () -> new BlockItem(END_CRYSTAL_ORE.get(), new Item.Properties().group(EndRemastered.TAB)));
 
     //Biomes
 

@@ -5,6 +5,7 @@ import com.ShteKen.endrem.util.EyeTemplate;
 import com.ShteKen.endrem.util.RegistryHandler;
 import javafx.scene.effect.Glow;
 import javafx.scene.effect.Light;
+import mcp.MethodsReturnNonnullByDefault;
 import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.player.PlayerEntity;
@@ -90,13 +91,14 @@ public class EmptyFrame extends Block {
     }
     // Change the empty frame for one of the 11 frames
 
+
     @Override
-    public ActionResultType onBlockActivated(BlockState state, World worldIn, BlockPos pos, PlayerEntity player, Hand handIn, BlockRayTraceResult hit) {
+    public ActionResultType  onBlockActivated (BlockState state, World worldIn, BlockPos pos, PlayerEntity player, Hand handIn, BlockRayTraceResult hit) {
 
 
         if (player.getHeldItemMainhand().getItem() == RegistryHandler.OLD_PEARL.get()) {
             if (!worldIn.isRemote) {
-                if (EyeTemplate.IsOldFrame(worldIn, pos) == false) {
+                if (!EyeTemplate.IsOldFrame(worldIn, pos)) {
 
                     worldIn.setBlockState(pos.add(0, 0, 0), RegistryHandler.OLD_FRAME.get().getDefaultState());
 
@@ -108,7 +110,7 @@ public class EmptyFrame extends Block {
 
         else if (player.getHeldItemMainhand().getItem() == RegistryHandler.ROGUE_PEARL.get()) {
             if (!worldIn.isRemote) {
-                if (EyeTemplate.IsRogueFrame(worldIn, pos) == false) {
+                if (!EyeTemplate.IsRogueFrame(worldIn, pos)) {
 
 
                     worldIn.setBlockState(pos.add(0, 0, 0), RegistryHandler.ROGUE_FRAME.get().getDefaultState());
@@ -120,7 +122,7 @@ public class EmptyFrame extends Block {
         }
         else if (player.getHeldItemMainhand().getItem() == RegistryHandler.NETHER_PEARL.get()) {
             if (!worldIn.isRemote) {
-                if (EyeTemplate.IsNetherFrame(worldIn, pos) == false) {
+                if (!EyeTemplate.IsNetherFrame(worldIn, pos)) {
 
 
                     worldIn.setBlockState(pos.add(0, 0, 0), RegistryHandler.NETHER_FRAME.get().getDefaultState());
@@ -132,7 +134,7 @@ public class EmptyFrame extends Block {
         }
         else if (player.getHeldItemMainhand().getItem() == RegistryHandler.CORRUPTED_PEARL.get()) {
             if (!worldIn.isRemote) {
-                if (EyeTemplate.IsCorruptedFrame(worldIn, pos) == false) {
+                if (!EyeTemplate.IsCorruptedFrame(worldIn, pos)) {
 
 
                     worldIn.setBlockState(pos.add(0, 0, 0), RegistryHandler.CORRUPTED_FRAME.get().getDefaultState());
@@ -144,7 +146,7 @@ public class EmptyFrame extends Block {
         }
         else if (player.getHeldItemMainhand().getItem() == RegistryHandler.COLD_PEARL.get()) {
             if (!worldIn.isRemote) {
-                if (EyeTemplate.IsColdFrame(worldIn, pos) == false) {
+                if (!EyeTemplate.IsColdFrame(worldIn, pos)) {
 
 
                     worldIn.setBlockState(pos.add(0, 0, 0), RegistryHandler.COLD_FRAME.get().getDefaultState());
@@ -156,7 +158,7 @@ public class EmptyFrame extends Block {
         }
         else if (player.getHeldItemMainhand().getItem() == RegistryHandler.MAGICAL_PEARL.get()) {
             if (!worldIn.isRemote) {
-                if (EyeTemplate.IsMagicalFrame(worldIn, pos) == false) {
+                if (!EyeTemplate.IsMagicalFrame(worldIn, pos)) {
 
 
                     worldIn.setBlockState(pos.add(0, 0, 0), RegistryHandler.MAGICAL_FRAME.get().getDefaultState());
@@ -168,7 +170,7 @@ public class EmptyFrame extends Block {
         }
         else if (player.getHeldItemMainhand().getItem() == RegistryHandler.BLACK_PEARL.get()) {
             if (!worldIn.isRemote) {
-                if (EyeTemplate.IsBlackFrame(worldIn, pos) == false) {
+                if (!EyeTemplate.IsBlackFrame(worldIn, pos)) {
 
 
                     worldIn.setBlockState(pos.add(0, 0, 0), RegistryHandler.BLACK_FRAME.get().getDefaultState());
@@ -180,7 +182,7 @@ public class EmptyFrame extends Block {
         }
         else if (player.getHeldItemMainhand().getItem() == RegistryHandler.LOST_PEARL.get()) {
             if (!worldIn.isRemote) {
-                if (EyeTemplate.IsLostFrame(worldIn, pos) == false) {
+                if (!EyeTemplate.IsLostFrame(worldIn, pos)) {
 
 
                     worldIn.setBlockState(pos.add(0, 0, 0), RegistryHandler.LOST_FRAME.get().getDefaultState());
@@ -193,7 +195,7 @@ public class EmptyFrame extends Block {
         }
         else if (player.getHeldItemMainhand().getItem() == RegistryHandler.WITHER_PEARL.get()) {
             if (!worldIn.isRemote) {
-                if (EyeTemplate.IsWitherFrame(worldIn, pos) == false) {
+                if (!EyeTemplate.IsWitherFrame(worldIn, pos)) {
 
 
                     worldIn.setBlockState(pos.add(0, 0, 0), RegistryHandler.WITHER_FRAME.get().getDefaultState());
@@ -206,7 +208,7 @@ public class EmptyFrame extends Block {
         }
         else if (player.getHeldItemMainhand().getItem() == RegistryHandler.GUARDIAN_PEARL.get()) {
             if (!worldIn.isRemote) {
-                if (EyeTemplate.IsGuardianFrame(worldIn, pos) == false) {
+                if (!EyeTemplate.IsGuardianFrame(worldIn, pos)) {
 
 
                     worldIn.setBlockState(pos.add(0, 0, 0), RegistryHandler.GUARDIAN_FRAME.get().getDefaultState());
@@ -219,7 +221,7 @@ public class EmptyFrame extends Block {
         }
         else if (player.getHeldItemMainhand().getItem() == RegistryHandler.END_CRYSTAL_PEARL.get()) {
             if (!worldIn.isRemote) {
-                if (EyeTemplate.IsOreFrame(worldIn, pos) == false) {
+                if (!EyeTemplate.IsOreFrame(worldIn, pos)) {
 
 
                     worldIn.setBlockState(pos.add(0, 0, 0), RegistryHandler.END_CRYSTAL_FRAME.get().getDefaultState());
