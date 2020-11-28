@@ -13,7 +13,7 @@ public class STConfiguredStructures {
 
       public static void registerConfiguredStructures() {
             Registry<StructureFeature<?, ?>> registry = WorldGenRegistries.CONFIGURED_STRUCTURE_FEATURE;
-            Registry.register(registry, new ResourceLocation(EndRemastered.MOD_ID, "configured_run_down_house"), CONFIGURED_END_CASTLE);
+            Registry.register(registry, new ResourceLocation(EndRemastered.MOD_ID, "configured_end_castle"), CONFIGURED_END_CASTLE);
             FlatGenerationSettings.STRUCTURES.put(STStructures.END_CASTLE.get(), CONFIGURED_END_CASTLE);
       }
       }

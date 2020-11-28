@@ -1,17 +1,30 @@
 package com.ShteKen.endrem.util;
 
 import com.ShteKen.endrem.EndRemastered;
+import com.ShteKen.endrem.STConfiguredStructures;
+import com.ShteKen.endrem.STStructures;
 import com.ShteKen.endrem.blocks.*;
 import com.ShteKen.endrem.items.ItemBase;
+import com.ShteKen.endrem.world.structures.EndCastle;
+import com.ShteKen.endrem.world.structures.EndCastlePieces;
+import com.mojang.serialization.Codec;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.world.gen.feature.DecoratedFeature;
+import net.minecraft.world.gen.feature.Feature;
+import net.minecraft.world.gen.feature.Features;
+import net.minecraft.world.gen.feature.NoFeatureConfig;
+import net.minecraft.world.gen.feature.structure.Structure;
+import net.minecraft.world.gen.feature.structure.StructureFeatures;
+import net.minecraft.world.gen.feature.template.TemplateManager;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.ForgeRegistryEntry;
+import org.apache.commons.compress.archivers.zip.UnsupportedZipFeatureException;
 
 public class RegistryHandler {
 
@@ -19,13 +32,15 @@ public class RegistryHandler {
 
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, EndRemastered.MOD_ID);
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, EndRemastered.MOD_ID);
-   // public static final DeferredRegister<Biome> BIOMES = DeferredRegister.create(ForgeRegistries.BIOMES, EndRemastered.MOD_ID);
+    public static final DeferredRegister<Structure<?>> STRUCTURE_FEATURES = DeferredRegister.create(ForgeRegistries.STRUCTURE_FEATURES, EndRemastered.MOD_ID);
 
     public static void init() {
 
         ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
         BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
+        STRUCTURE_FEATURES.register(FMLJavaModLoadingContext.get().getModEventBus());
     }
+   // public static final RegistryObject<Item> END_CASTLE = STRUCTURE_FEATURES.register("end_castle", STStructures<Structure<?>>::new);
 
     //Item
     public static final RegistryObject<Item> OLD_PEARL = ITEMS.register("old_pearl", ItemBase::new);
@@ -86,8 +101,5 @@ public class RegistryHandler {
     public static final RegistryObject<Item> END_CRYSTAL_BLOCK_ITEM = ITEMS.register("end_crystal_block", () -> new BlockItem(END_CRYSTAL_BLOCK.get(), new Item.Properties().group(EndRemastered.TAB)));
 
     //Biomes
-
-   // public static final RegistryObject<Biome> END_LAND = BIOMES.register("end_land", EndLandBiome::new);
-
 
 }
