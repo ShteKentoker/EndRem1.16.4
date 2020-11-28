@@ -42,13 +42,11 @@ public class STStructures {
 
         setupStructure(
                 END_CASTLE.get(),
-                new StructureSeparationSettings(10,
-                        5,
-                        1234567890),
+                new StructureSeparationSettings(5,
+                        2,
+                        959874384),
                 true);
 
-
-        STStructures.registerAllPieces();
     }
 
     public static <F extends Structure<?>> void setupStructure(
