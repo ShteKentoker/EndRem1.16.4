@@ -60,7 +60,7 @@ public class EndCastle extends Structure<NoFeatureConfig> {
 
             this.recalculateStructureSize();
 
-            EndRemastered.LOGGER.log(Level.DEBUG, "Rundown House at " + (blockpos.getX()) + " " + blockpos.getY() + " " + (blockpos.getZ()));
+            EndRemastered.LOGGER.log(Level.DEBUG, "End Castle at " + (blockpos.getX()) + " " + blockpos.getY() + " " + (blockpos.getZ()));
         }
     }
 

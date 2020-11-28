@@ -26,15 +26,15 @@ import java.util.Random;
 
 public class EndCastlePieces {
 
-    private static final ResourceLocation BOTTOM_LEFT = new ResourceLocation(EndRemastered.MOD_ID, ":castle_bl");
-    private static final ResourceLocation MID_LEFT = new ResourceLocation(EndRemastered.MOD_ID, ":castle_ml");
-    private static final ResourceLocation TOP_LEFT = new ResourceLocation(EndRemastered.MOD_ID, ":castle_tl");
-    private static final ResourceLocation BOTTOM_MID = new ResourceLocation(EndRemastered.MOD_ID, ":castle_bm");
-    private static final ResourceLocation BOTTOM_RIGHT = new ResourceLocation(EndRemastered.MOD_ID, ":castle_br");
-    public static final ResourceLocation MID_RIGHT = new ResourceLocation(EndRemastered.MOD_ID, ":castle_mr");
-    public static final ResourceLocation TOP_RIGHT = new ResourceLocation(EndRemastered.MOD_ID, ":castle_tr");
-    public static final ResourceLocation TOP_MID = new ResourceLocation(EndRemastered.MOD_ID, ":castle_tm");
-    public static final ResourceLocation MID_MID = new ResourceLocation(EndRemastered.MOD_ID, ":castle_mm");
+    private static final ResourceLocation BOTTOM_LEFT = new ResourceLocation(EndRemastered.MOD_ID, "castle_bl");
+    private static final ResourceLocation MID_LEFT = new ResourceLocation(EndRemastered.MOD_ID, "castle_ml");
+    private static final ResourceLocation TOP_LEFT = new ResourceLocation(EndRemastered.MOD_ID, "castle_tl");
+    private static final ResourceLocation BOTTOM_MID = new ResourceLocation(EndRemastered.MOD_ID, "castle_bm");
+    private static final ResourceLocation BOTTOM_RIGHT = new ResourceLocation(EndRemastered.MOD_ID, "castle_br");
+    public static final ResourceLocation MID_RIGHT = new ResourceLocation(EndRemastered.MOD_ID, "castle_mr");
+    public static final ResourceLocation TOP_RIGHT = new ResourceLocation(EndRemastered.MOD_ID, "castle_tr");
+    public static final ResourceLocation TOP_MID = new ResourceLocation(EndRemastered.MOD_ID, "castle_tm");
+    public static final ResourceLocation MID_MID = new ResourceLocation(EndRemastered.MOD_ID, "castle_mm");
     private static final Map<ResourceLocation, BlockPos> OFFSET = new ImmutableMap.Builder<ResourceLocation, BlockPos>()
             .put(BOTTOM_LEFT, new BlockPos(0, 0, 0))
             .put(MID_LEFT, new BlockPos(0, 0, 0))

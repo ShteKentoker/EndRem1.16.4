@@ -37,13 +37,13 @@ public class STStructures {
 
     public static IStructurePieceType EC = EndCastlePieces.Piece::new;
 
-    public static void setupStructures() {
 
+    public static void setupStructures() {
 
         setupStructure(
                 END_CASTLE.get(),
-                new StructureSeparationSettings(5,
-                        2,
+                new StructureSeparationSettings(27,
+                        20,
                         959874384),
                 true);
 

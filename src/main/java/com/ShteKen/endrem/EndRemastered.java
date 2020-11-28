@@ -65,10 +65,17 @@ public class EndRemastered {
         // The comments for BiomeLoadingEvent and StructureSpawnListGatherEvent says to do HIGH for additions.
         forgeBus.addListener(EventPriority.HIGH, this::biomeModification);
     }
-    public void onRegisterStructures(final RegistryEvent.Register<Structure<?>> event) {
 
+    private void setup(final FMLCommonSetupEvent event) {
+        event.enqueueWork(() -> {
+            STStructures.setupStructures();
+            STStructures.registerAllPieces();
+            STConfiguredStructures.registerConfiguredStructures();
+            STStructures.init();
+        });
+
+        OreSpawnHandler.registerOres();
     }
-
     public void biomeModification(final BiomeLoadingEvent event) {
         // Add structure to all biomes
 
@@ -87,7 +94,7 @@ public class EndRemastered {
             }
 
             Map<Structure<?>, StructureSeparationSettings> tempMap = new HashMap<>(serverWorld.getChunkProvider().generator.func_235957_b_().func_236195_a_());
-            tempMap.put(STStructures.END_CASTLE.get(), DimensionStructuresSettings.field_236191_b_.get(STStructures.END_CASTLE));
+            tempMap.put(STStructures.END_CASTLE.get(), DimensionStructuresSettings.field_236191_b_.get(STStructures.END_CASTLE.get()));
             serverWorld.getChunkProvider().generator.func_235957_b_().field_236193_d_ = tempMap;
 
         }
@@ -101,16 +108,7 @@ public class EndRemastered {
 
     /////////////////////////////////////////////////////////////////////////////////////
 
-    private void setup(final FMLCommonSetupEvent event) {
-        event.enqueueWork(() -> {
-            STStructures.setupStructures();
-            STStructures.registerAllPieces();
-            STConfiguredStructures.registerConfiguredStructures();
-            STStructures.init();
-        });
 
-        OreSpawnHandler.registerOres();
-    }
 
     public static final ItemGroup TAB = new ItemGroup("endremTab") {
 
